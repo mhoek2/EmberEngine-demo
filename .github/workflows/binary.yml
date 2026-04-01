@@ -25,7 +25,7 @@ jobs:
       - name: Add assimp to PATH
         shell: pwsh
         run: |
-          $assimpPath = "$(pwd)\assimp"
+          $assimpPath = "$(pwd)\engine\assimp"
           echo "PATH=$assimpPath;$env:PATH" >> $env:GITHUB_ENV
 
       - name: Install dependencies
